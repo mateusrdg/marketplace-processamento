@@ -1,0 +1,22 @@
+
+spring:
+  rabbitmq:
+    host: 192.168.99.100
+    username: admin
+    password: admin
+    port: 5672
+  application:
+    name: venda
+
+server:
+  port: 8085
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://localhost:8081/eureka/
+    fetch-registry: true
+    register-with-eureka: true
+
